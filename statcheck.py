@@ -36,10 +36,6 @@ print(f"Update interval: {update_interval} seconds")
 print(f"Note: {note}")
 
 while True:
-    cpu_percentages = psutil.cpu_percent(interval=None, percpu=True)
-    cpu_usage = sum(cpu_percentages) / len(cpu_percentages)
-    ram_usage = (psutil.virtual_memory().used / psutil.virtual_memory().total) * 100
-
     num_roblox_tabs = len([p for p in psutil.process_iter() if p.name() == "RobloxPlayerBeta.exe" and p.memory_info().rss >= 100*1024*1024])
 
     screenshot_path = "screenshot.png"
@@ -50,8 +46,6 @@ while True:
     embed = discord_webhook.DiscordEmbed(title="VPS STAT CHECK", description=note, color=0x7289da)
     embed.set_image(url="attachment://screenshot.png")
     embed.set_footer(text=f"Dữ liệu sẽ được tải lên sau mỗi {update_interval} giây")
-    embed.add_embed_field(name="<:hoccongviec:1028367476037259424> CPU Usage", value=f"`{cpu_usage}%`")
-    embed.add_embed_field(name="<:hoccongviec:1028367476037259424> RAM Usage", value=f"`{ram_usage}%`")
     embed.add_embed_field(name="<:hoocstok:1045320042230841356> Roblox Tabs", value=f"`{num_roblox_tabs}`")
 
     webhook.add_file(file=open(screenshot_path, "rb"), filename="screenshot.png")
