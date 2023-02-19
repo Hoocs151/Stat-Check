@@ -2,7 +2,7 @@
 
 * (https://discord.gg/teZ5NztXGN)
 * tool hơi rác thông cảm :(
-* hàng free nên bug tui chịu
+* hàng free nên bug hay đểu tui chịu
 
 ![urgay](https://cdn.discordapp.com/attachments/1064506575802351616/1076469487257276426/image.png)
 
