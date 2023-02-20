@@ -29,7 +29,6 @@ update_interval = int(config['cac']['update_interval'])
 note = config['cac']['note']
 update_check_enabled = config['cac']['update_check_enabled']
 
-# Initialize colorama to work on Windows OS
 colorama.init()
 
 title = """ 
@@ -40,12 +39,11 @@ title = """
    █              ▀███▀            
   ▀                                """
 frame_width = 50
-
 print(Fore.LIGHTWHITE_EX + f"{title.center(frame_width)}" + Style.RESET_ALL)
-print(Fore.LIGHTMAGENTA_EX + f"Webhook URL: {webhook_url}" + Style.RESET_ALL)
-print(Fore.LIGHTMAGENTA_EX + f"Update Interval: {update_interval} seconds" + Style.RESET_ALL)
-print(Fore.LIGHTMAGENTA_EX + f"Note: {note}" + Style.RESET_ALL)
-print(Fore.LIGHTMAGENTA_EX + f"Roblox Update Detected: {update_check_enabled}\n" + Style.RESET_ALL)
+print(Fore.LIGHTCYAN_EX + f"Webhook URL: {webhook_url}" + Style.RESET_ALL)
+print(Fore.LIGHTCYAN_EX + f"Update Interval: {update_interval} seconds" + Style.RESET_ALL)
+print(Fore.LIGHTCYAN_EX + f"Note: {note}" + Style.RESET_ALL)
+print(Fore.LIGHTCYAN_EX + f"Roblox Update Detected: {update_check_enabled}\n" + Style.RESET_ALL)
 
 roblox_version = None
 
@@ -76,7 +74,6 @@ while True:
 
     webhook = discord_webhook.DiscordWebhook(url=webhook_url)
 
-
     embed = discord_webhook.DiscordEmbed(
         title="VPS STAT CHECK",
         description=note,
@@ -98,7 +95,6 @@ while True:
     )
 
     webhook.add_file(file=open(screenshot_path, "rb"), filename="screenshot.png")
-
     webhook.add_embed(embed)
     response = webhook.execute()
 
