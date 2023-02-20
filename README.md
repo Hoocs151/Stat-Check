@@ -1,3 +1,9 @@
+# FEATURES
+
+* Detect roblox update and closing roblox account manager ?? (maybe bug)
+* Stat check
+* Auto end task roblox < 100mb ? tac dung la j thi 0 bit, kill ghost tab ver oc cho ??
+
 # PREVIEW
 
 * (https://discord.gg/teZ5NztXGN)
@@ -6,11 +12,7 @@
 
 ![urgay](https://cdn.discordapp.com/attachments/1064506575802351616/1077250901519122553/image.png)
 
-# FEATURES
 
-* Detect roblox update and closing roblox account manager ?? (maybe bug)
-* Stat check
-* Auto end task roblox < 100mb ? tac dung la j thi 0 bit, kill ghost tab ver oc cho ??
 
 ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay 
 ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay ur gay 
