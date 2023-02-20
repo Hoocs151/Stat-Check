@@ -2,7 +2,6 @@
 
 * Detect roblox update and closing roblox account manager ?? (maybe bug)
 * Stat check
-* Auto end task roblox < 100mb ? tac dung la j thi 0 bit, kill ghost tab ver oc cho ??
 
 # PREVIEW
 
