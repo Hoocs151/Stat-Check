@@ -84,7 +84,7 @@ while True:
     )
     embed.set_image(url="attachment://screenshot.png")
     embed.set_footer(
-        text=f"Dữ liệu sẽ được tải lên sau mỗi {update_interval} giây - {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+        text=f"Dữ liệu sẽ được tải lên sau mỗi {update_interval} giây"
     )
     embed.add_embed_field(
         name="<:hoocstok:1045320042230841356> Roblox Tabs",
