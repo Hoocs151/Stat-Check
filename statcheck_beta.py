@@ -15,7 +15,6 @@ CONFIG_DEFAULTS = {
     'note': 'ur gay',
     'update_check_enabled': 'true',
 }
-
 config = configparser.ConfigParser()
 
 if not os.path.isfile('config.ini'):
@@ -40,11 +39,10 @@ title = """
   ▀                                """
 frame_width = 50
 print(Fore.LIGHTWHITE_EX + f"{title.center(frame_width)}" + Style.RESET_ALL)
-print(Fore.LIGHTCYAN_EX + f"Webhook URL: {webhook_url}" + Style.RESET_ALL)
-print(Fore.LIGHTCYAN_EX + f"Update Interval: {update_interval} seconds" + Style.RESET_ALL)
-print(Fore.LIGHTCYAN_EX + f"Note: {note}" + Style.RESET_ALL)
-print(Fore.LIGHTCYAN_EX + f"Roblox Update Detected: {update_check_enabled}\n" + Style.RESET_ALL)
-
+print(Fore.LIGHTCYAN_EX + f"🔗 Webhook URL: {webhook_url}" + Style.RESET_ALL)
+print(Fore.LIGHTCYAN_EX + f"⏰ Update Interval: {update_interval} seconds" + Style.RESET_ALL)
+print(Fore.LIGHTCYAN_EX + f"📝 Note: {note}" + Style.RESET_ALL)
+print(Fore.LIGHTCYAN_EX + f"🔄 Roblox Update Check: {'❌' if update_check_enabled == 'false' else '✅'}\n" + Style.RESET_ALL)
 roblox_version = None
 
 while True:
@@ -57,25 +55,22 @@ while True:
             
             if roblox_version != latest_version:
                 roblox_version = latest_version
-                print(f'{Fore.GREEN}[ + ] New Roblox update detected --> Closing Roblox account manager!{Style.RESET_ALL}')
+                print(f'{Fore.GREEN}✅ New Roblox update detected --> Closing Roblox account manager!{Style.RESET_ALL}')
                 for process in psutil.process_iter(['name', 'cmdline']):
                     if 'RobloxAccountManager.exe' in process.info['name'] and 'NoUpdatePrompt' in process.info['cmdline']:
                         if psutil.pid_exists(process.pid):
                             process.terminate()
-                print(f'{Fore.GREEN}[ + ] Current Roblox version: {latest_version}{Style.RESET_ALL}')
+                print(f'{Fore.GREEN}✅ Current Roblox version: {latest_version}{Style.RESET_ALL}')
 
         except Exception as e:
             pass
 
     num_roblox_tabs = len([p for p in psutil.process_iter() if p.name() == "RobloxPlayerBeta.exe" and p.memory_info().rss >= 100*1024*1024])
-
     screenshot_path = "screenshot.png"
     pyautogui.screenshot(screenshot_path)
-
     webhook = discord_webhook.DiscordWebhook(url=webhook_url)
-
     embed = discord_webhook.DiscordEmbed(
-        title="VPS STAT CHECK",
+        title="᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼📈 VPS STAT CHECK 📊",
         description=note,
         color=0x7289da
     )
@@ -90,10 +85,9 @@ while True:
     )
     embed.add_embed_field(
         name="⏱ Time",
-        value=f"`{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}`",
+    value=f"`{datetime.datetime.now().strftime('%d/%m/%Y | %Hh %Mp')}`",
         inline=True
     )
-
     webhook.add_file(file=open(screenshot_path, "rb"), filename="screenshot.png")
     webhook.add_embed(embed)
     response = webhook.execute()
