@@ -1,6 +1,6 @@
 # FEATURES
 
-* Detect roblox update and closing roblox account manager ?? (maybe bug)
+* ( beta version ) Detect roblox update and closing roblox account manager ?? (maybe bug)
 * Stat check
 
 # PREVIEW
